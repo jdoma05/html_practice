@@ -1,112 +1,98 @@
 <!DOCTYPE html>
-<htrml>
+<html>
     <head>
         <title>Vox Home</title>
         <style>
+            html, body {
+                margin: 0;
+                padding: 0;
+                font-family: Arial, sans-serif;
+                color: #000;
+                overflow-x: hidden; /* Prevent horizontal scrolling */
+                min-height: 100vh; /* Ensure body is at least full viewport height */
+            }
+
             .header {
                 position: fixed;
+                top: 0;
                 width: 100%;
                 height: 65px;
-                background-color: black;
-                color: white;
-                font-size: 20px; 
-                z-index: 1;}
-            
-            .tab1 {
-                left: 50%;
-                top: 20px;
-                position: absolute; }
+                background-color: #000;
+                color: #fff;
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
+                padding: 0 50px;
+                box-sizing: border-box;
+                z-index: 1;
+                font-size: 20px;
+            }
 
-            .tab2 {
-                left: 50px;
-                top: 20px;
-                position: absolute; }
-
-            .tab3 {
-                right: 50px;
-                top: 20px;
-                position: absolute; }
-
-            body {
-                margin: 0;
-                padding: 0; 
-                overflow: visible;}
-
-            
             .body_part {
-                position: absolute;
                 text-align: center;
-                width: 100%;
-                color: black;
-                font-size: 30px;
-                top: 40px;
+                padding-top: 100px;
+                max-width: 800px;
+                margin: 0 auto;
             }
 
-            .body_paragragh {
-                font-size: 30px;
-                line-height: 50px;
+            .body_part h1 {
+                font-size: 40px;
+                margin-bottom: 20px;
             }
 
-            .footer {
-                position: relative;
-                left: 50%;
-                bottom: 25px;
-                transform: translateX(-50%);
-                width: 500px;
-                height: 100px;
-                border-radius: 20px;
-                background-color: black;
-                color: white;
-                z-index: 2;
-            }
-
-            .footer_text {
-                position: relative;
-                top: 10px;
+            .body_paragraph {
+                font-size: 20px;
+                line-height: 1.6;
+                text-align: left;
+                margin: 0 auto 20px auto;
             }
 
             ul {
-                list-style-position: inside;
-                text-align: center;
+                list-style: inside;
+                padding-left: 0;
             }
 
+            .footer {
+                position: fixed;
+                bottom: 0;
+                left: 0;
+                width: 100%;
+                background-color: #000;
+                color: #fff;
+                text-align: center;
+                padding: 20px 0;
+            }
         </style>
     </head>
     <body>
         <div class="header">
-            <div class="tab1">HOME</div>
-            <div class="tab2">Personal</div>
-            <div class="tab3">Contact</div>
+            <div>HOME</div>
+            <div>Personal</div>
+            <div>Contact</div>
         </div>
-        <!--Add picutre of me on right & left-->
-            <div class="body_part">
-                <h1>Hi.. I'm Jon</h1>
-                <p class="body_paragragh">
-                    Nice to meet you!<br><br>
-                    I am Sophmore Computer Science<br>
-                    major at UIC.<br><br>
-                    I have intermediate knowledge using:<br>
-                    <strong>Java &nbsp; html &nbsp; class<br><br></strong>
-                    And am confident using:<br>
-                    <strong>Python &nbsp; C &nbsp; C++<br><br></strong>
-                    I am still trying to find my way <br>
-                    in the job market but I'm aiming to become a:
-                    <ul>
-                        <li><u>Software Engineer</u>&nbsp&nbsp&nbsp&nbsp</li>
-                        <li><u>Full Stack Developer</u></li>
-                        <li><u>Web Developer</u>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp</li>
-                    </ul>
-                    <br>...
-                    <br>...
-                    <br>...
-                    <br>...
-                </p>
-                <div class="footer">
-                    <div class="footer_text">
-                        
-                    </div>
-                </div>
-            </div>
-        <!--Footer w name and email, mailing adress-->
+
+        <div class="body_part">
+            <h1>Hi, I'm Jon</h1>
+            <p class="body_paragraph">
+                Nice to meet you!<br><br>
+                I am a Junior Computer Science student at the University of Illinois Chicago.<br><br>
+                I have experience with:<br>
+                Python, C, C++, Java, JavaScript, HTML, CSS, Node.js, and MySQL<br><br>
+                I am exploring my path in technology and seeking hands-on experience to determine whether I want to focus on software development or web design. My goal is to build a career that involves automation and creating tools that improve efficiency.<br><br>
+                Potential career paths I’m pursuing:
+            </p>
+            <ul>
+                <li>Software Engineer</li>
+                <li>Full Stack Developer</li>
+                <li>Web Developer</li>
+            </ul>
+            <p class="body_paragraph">
+                Still in Progress…
+            </p>
+        </div>
+
+        <div class="footer">
+            Jon Domanus | jonathanadomanus@gmail.com | Chicago, IL
+        </div>
     </body>
-</htrml>
+</html>
